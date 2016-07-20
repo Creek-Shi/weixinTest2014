@@ -307,8 +307,10 @@ public class MainWeixin extends Activity {
 
 	public void startchat(View v) { // 小黑 对话界面
 
-		Toast.makeText(getApplicationContext(), "登录成功",
-				Toast.LENGTH_LONG).show();
+		//Toast.makeText(getApplicationContext(), "登录成功",
+		//		Toast.LENGTH_LONG).show();
+		Intent intent = new Intent(MainWeixin.this, LuofuActivity.class);
+		startActivity(intent);
 	}
 
 	public void exit_settings(View v) { // 退出 伪“对话框”，其实是一个activity
